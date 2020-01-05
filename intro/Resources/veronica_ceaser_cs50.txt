@@ -1,0 +1,36 @@
+Here are the things I think you should think upon(line by line of your program)
+
+1. Add ctype.h and stdlib.h
+2. instead of argc == 2 try argc != 2 and print the error immediately
+3. userargument is not a good variable name try user_argument or something short.
+4. I think better name for user_arg_ascii could be 'key' (but doesn't matter) 
+5. you don't need plaintext_ascii(Why? We will see later)[Save Resources].
+6. Similarly you don't need ciphertext
+7. Here check that userargument is all digit or not with a for loop and isdigit() function.
+8. instead of for loop try atoi function.
+9. Now you dont need the next if argument( if (user_arg_ascii > 47 && user_arg_ascii < 58) )
+beacause you have already check that in step 7.
+10. declare plaintext.
+11.now decide how much you need to shift each character?
+	lets take examples
+	if the text is "abc" and key(user_arg_ascii) is 3
+	then shift for first letter is 'a' + key
+	generalizing shift = plaintext[i] +  key
+    but what if their is a 'z'
+	then 'z' + key will be some different character than 'a'
+	for that we wrap up with
+	int shift = ('a' - 1) + (shift % 90) [Try doing this on paper to get the idea]
+	
+	generalizing plaintext[i] = shift;
+
+Decide where you need to use loops and conditions.
+now you have a scrambled plaintext which is indeed the ciphertext.
+print "ciphertext: "
+print the plaintext array without '\n'
+
+I tried my best to help you without showing the correct answer.
+(some changes are just for design purposes, you can have a correct program without them)
+
+If I confused you more then forget all that and
+Try solving the problem on paper first and then try to program it.
+Sorry!!!

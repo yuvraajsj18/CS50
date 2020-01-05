@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registrants
+{% endblock %}
+
+{% block body %}
+
+    <h1 style = "color: rgb(224, 192, 10)">
+        Registrants
+    </h1>
+    <ul>
+        {% for row in rows %}
+            <li>
+                {{row['id']}} - {{row['name']}} - {{row['dorm']}}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

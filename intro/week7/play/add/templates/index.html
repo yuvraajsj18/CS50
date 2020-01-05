@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Add</h1>
+    <form action = "/result" method = "GET">
+        <input name = "num1" type = "text" placeholder="x" autocomplete="off" />
+        <input name = "num2" type = "text" placeholder="y" autocomplete="off" />
+        <input type="submit" value="Add" />
+    </form>
+
+{% endblock %}

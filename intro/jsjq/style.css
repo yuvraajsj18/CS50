@@ -1,0 +1,22 @@
+
+body {
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    border: 2px solid black;
+    background-color: azure;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}

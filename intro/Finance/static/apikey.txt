@@ -1,0 +1,5 @@
+token api = pk_d668ebf9edc44535893c2d99fde7578c
+
+export API_KEY=value
+
+export API_KEY=pk_d668ebf9edc44535893c2d99fde7578c

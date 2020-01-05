@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <input name = "word" type="text" placeholder="Starts With" autocomplete="off" autofocus />
+
+    <ul></ul>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        let input = document.querySelector("input");
+        input.onkeyup = function() {
+            $.get("/search?q=" + input.value, function(data){
+                let html = ''
+                for(word of data) {
+                    html += '<li>' + word + '</li>'; 
+                }
+                document.querySelector("ul").innerHTML = html;
+            });
+        };
+
+    </script>
+
+{% endblock %}

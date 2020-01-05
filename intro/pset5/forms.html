@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            Hello Forms
+        </title>
+        <style>
+            h1
+            {
+                border: ridge blue 3px;
+            }
+
+            body
+            {
+                background-color: lightgreen;
+                color: #ef7a16;
+                font-family: verdana;
+            }
+
+            .youtube
+            {
+                width: 33%;
+                position: relative;
+                top: 0px;
+                height: 100%;
+            }
+
+            .google
+            {
+                width: 33%;
+                position: absolute;
+                left: 33%;
+                top: 0px;
+                height: 100%;
+            }
+
+            .music
+            {
+                width: 34%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0%;
+            }
+
+        </style>
+    </head>
+    <body style = "text-align: center;">
+        <div class = "youtube">
+            <h1>Search On Youtube</h1>
+            <form action = "https://www.youtube.com/results" method = "GET" target = "_blank">
+                <input name = "search_query" type = "text" />
+                <input value = "Search" type = "submit" />
+            </form>
+        </div>
+        <div class = "google">
+            <h1>Search On Google</h1>
+            <form action = "https://www.google.com/search" method = "GET" target = "_blank">
+                <input name = "q" type = "text" />
+                <input value = "Search" type = "submit" />
+            </form>
+        </div>
+        <div class = "music">
+            <h1>Search On Youtube Music</h1>
+            <form action = "https://music.youtube.com/search" method = "GET" target = "_blank">
+                <input name = "q" type = "text" />
+                <input value = "Search" type = "submit" />
+            </form>
+        </div>
+    </body>
+</html>
